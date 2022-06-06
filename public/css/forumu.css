@@ -1,0 +1,188 @@
+/* 全体的なスタイル
+-------------------------------------------------- */
+/* フッターの下の空白と明るめの本文 */
+
+body {
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+  }
+
+  .py-4 {
+      margin-top: -1.5rem;
+  }
+
+
+  /* カルーセルをカスタマイズ
+  -------------------------------------------------- */
+
+  /* カルーセルの基本クラス */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* 画像を配置しているので、キャプションを手助けする必要がある */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+  /* img要素の配置のために高さを宣言 */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+
+#TopVisual_1 {
+    background: url('../images/top_1.jpg') no-repeat center center;
+    background-size: cover;
+}
+#TopVisual_2 {
+    background: url('../images/top_2.jpg') no-repeat center center;
+    background-size: cover;
+}
+#TopVisual_3 {
+    background: url('../images/top_3.jpg') no-repeat center center;
+    background-size: cover;
+
+}
+  /* マーケティング・コンテンツ
+  -------------------------------------------------- */
+
+  /* カルーセルの下の3列の中のテキストを整列 */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+
+  /* フィーチャー
+  ------------------------- */
+
+  .featurette-divider {
+    margin: 5rem 0; /* ブートストラップの&lt;hr&gt;をもっと外に出す */
+  }
+
+  /* マーケティングの見出しを細めにする */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+  /* 折り畳み可能リストのサイドバー用 */
+   li{
+      list-style: none;
+  }
+.btn-toggle {
+
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+    background-color: transparent;
+    border: 0;
+  }
+  .btn-toggle:hover,
+  .btn-toggle:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: #d2f4ea;
+  }
+
+  .btn-toggle::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+  }
+
+  .btn-toggle[aria-expanded="true"] {
+    color: rgba(0, 0, 0, .85);
+  }
+  .btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+  }
+
+  .btn-toggle-nav a {
+    display: inline-flex;
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    text-decoration: none;
+  }
+  .btn-toggle-nav a:hover,
+  .btn-toggle-nav a:focus {
+    background-color: #d2f4ea;
+  }
+
+.requester_image:hover {
+    opacity: .7;
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+
+  /* レスポンシブCSS
+  -------------------------------------------------- */
+
+  @media (min-width: 40em) {
+    /* カルーセルコンテンツのサイズを大きくする */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+
+      .box30 {
+    margin: 2em 0;
+    background: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.box30 .box-title {
+    font-size: 1.2em;
+    background: #529eea;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box30 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+
+.chat_form {
+    margin-bottom: 3%;
+}
+
+
+
+
+

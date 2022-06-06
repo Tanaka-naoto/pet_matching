@@ -1,0 +1,129 @@
+p {
+  margin-bottom: 0px;
+}
+
+.chatPage input[type="text"]:focus {
+  outline: 0;
+}
+
+.chatPage .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.chatPage .header .linkToMatching {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 40px;
+  border: 5px solid;
+  border-radius: 4px;
+  border-color: transparent transparent #fd5068 #fd5068;
+  transform: rotate(45deg);
+}
+
+.chatPage .header .chatPartner_name {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.chatPage .header .chatPartner_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chatPage .header .chatPartner_img > img {
+  width: 100%;
+}
+
+.chatPage .messagesArea {
+  overflow: scroll;
+  height: 397px;
+  background: url(http://127.0.0.1:8000/images/top_1.jpg) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 4%;
+}
+
+.chatPage .messagesArea .text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-bottom: 0px;
+  margin-right: 3%;
+  background: white;
+  width: max-content;
+  margin-left: 3%;
+}
+
+.chatPage .messagesArea .text-xs.text-right {
+  margin-left: auto;
+  margin-right: 3%;
+}
+
+.chatPage .messagesArea .commonmessage {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: #eaaee3c7;
+  position: relative;
+  max-width: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  list-style: none;
+  word-break: break-all;
+}
+
+.chatPage .messagesArea .commonmessage.auth {
+  margin-left: auto;
+  margin-right: 3%;
+}
+
+.chatPage .messagesArea .commonmessage.self::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 3px solid transparent;
+  border-left: 9px solid #eaaee3c7;
+}
+
+.chatPage .messagesArea .commonmessage.other {
+  margin-left: 3%;
+}
+
+.chatPage .messagesArea .commonmessage.other::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: -19px;
+  margin-top: -30px;
+  border: 5px solid transparent;
+  border-right: 15px solid #eaaee3c7;
+}
+
+.chatPage .messageInputForm {
+  border-top: 1px solid #e8e8e8;
+  background: pink;
+  padding: 2%;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.chatPage .messageInputForm .msg_wrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatPage .messageInputForm .msg_wrp .messageInputForm_input {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7%;
+}
