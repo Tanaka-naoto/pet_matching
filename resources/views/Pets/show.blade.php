@@ -59,7 +59,7 @@
               <!--投稿主だった場合 -->
             @if(Auth::id() == $pet->user_id)
                 <div>{{$matching_user->name}}</div>
-                <input type="image" src="{{$matching_user->image_url}}" alt="送信する" class="rounded-circle requester_image" style="width: 45px; height: 45px">
+                <input type="image" src="{{asset('storage/images/'.$matching_user->image_url)}}" alt="送信する" class="rounded-circle requester_image" style="width: 45px; height: 45px">
 
                 <form method="post" action="{{ route('reaction.destroy', $pet) }}">
                     @csrf
