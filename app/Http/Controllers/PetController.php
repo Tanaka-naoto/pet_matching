@@ -198,10 +198,11 @@ class PetController extends Controller
      */
     public function destroy(Pet $pet)
     {
+
         $this->authorize('delete', $pet);
 
-
-        Storage::delete('public/storage/pets/'.$pet->image_url);
+        Storage::disk('public')->delete('pets/'.$pet->image_url);
+        // Storage::delete('public/pets/'.$pet->image_url);
 
         //wantを削除
         $pet->wants()->delete();
