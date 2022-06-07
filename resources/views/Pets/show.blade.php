@@ -79,14 +79,15 @@
                 <div>{{$pet->user->name}}</div>
                 <form  action="{{ route('chat.show',$pet) }}" method="post" class="chat_form">
                     @csrf
-                    <input type="image" src="{{$pet->user->image_url}}" alt="送信する" class="rounded-circle requester_image" style="width: 45px; height: 45px">
+                    <input type="image" src="{{asset('storage/images/'.$pet->user->image_url)}}" alt="マッチングユーザー" class="rounded-circle requester_image" style="width: 45px; height: 45px">
+
                     <button type="submit" class="btn btn-success">チャットする</button>
                     <input type="hidden" name="user_id" value="{{ $pet->user_id }}">
                 </form>
 
             @else <div>すでにマッチングしているユーザーがいますが申請できます</div>
-            {{-- <input type="image" src="{{$matching_user->image_url}}" alt="送信する" class="rounded-circle requester_image" style="width: 45px; height: 45px"> --}}
-            <img src="{{$matching_user->image_url}}" class="rounded-circle" alt="" style="width: 45px; height: 45px">
+
+            <img src="{{asset('storage/images/'.$matching_user->image_url)}}" class="rounded-circle" alt="" style="width: 45px; height: 45px">
             @endif
         @endif
 
