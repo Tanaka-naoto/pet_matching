@@ -110,8 +110,9 @@
                         <form method="post" action="{{ route('want.show', $want) }}" class="osikko">
                             @csrf
                                 <input type="hidden" name="petnoid" value="{{ $pet->id }}">
-                                <input type="image" src="{{$want->user->image_url}}" alt="送信する" class="rounded-circle requester_image" style="width: 45px; height: 45px">
-                        </form>
+                                <input type="image" src="{{asset('storage/images/'.$want->user->image_url)}}" alt="送信する" class="rounded-circle requester_image" style="width: 45px; height: 45px">
+
+                            </form>
 
 
                         <p>{{$want->user->name}}</p>
