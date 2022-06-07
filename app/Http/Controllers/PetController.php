@@ -201,7 +201,7 @@ class PetController extends Controller
         $this->authorize('delete', $pet);
 
 
-        Storage::delete('public/pets/'.$pet->image_url);
+        Storage::delete('public/storage/pets/'.$pet->image_url);
 
         //wantを削除
         $pet->wants()->delete();
