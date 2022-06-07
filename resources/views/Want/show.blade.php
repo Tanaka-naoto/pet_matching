@@ -11,7 +11,7 @@
 ?>
 <div class="container marketing mt-3">
 
-    <img src="{{$want->user->image_url}}" class="rounded-circle" alt="" style="width: 55px; height: 55px">
+    <img src="{{asset('storage/images/'.$want->user->image_url)}}" class="rounded-circle" alt="" style="width: 55px; height: 55px">
     <div class="text-center">{{$want->user->name}}</div>
     <div class="box30">
         <div class="box-title">飼える根拠</div>
