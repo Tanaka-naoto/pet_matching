@@ -8,7 +8,7 @@
 
     <div class="chatPartner">
         <div>相手</div>
-        <div class="chatPartner_img"><img src="{{$chat_room_user->image_url}}"></div>
+        <div class="chatPartner_img"><img src="{{asset('storage/images/'.$chat_room_user->image_url)}}"></div>
       <div class="chatPartner_name">{{ $chat_room_user -> name }}</div>
     </div>
 
