@@ -22,29 +22,6 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('css')
-
-    <style>
-    /* .other::before {
-        content: "";
-        position: absolute;
-        top: 90%;
-        left: -15px;
-        margin-top: -30px;
-        border: 5px solid transparent;
-        border-right: 15px solid #c7deff;
-    }
-
-    .self::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 100%;
-        margin-top: -15px;
-        border: 3px solid transparent;
-        border-left: 9px solid #e96514;
-    } */
-</style>
-
 </head>
 <body>
     <div id="app">
