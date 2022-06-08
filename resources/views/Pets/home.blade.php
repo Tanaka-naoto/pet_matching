@@ -31,8 +31,8 @@
 
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>ペットマッチング</h1>
-              <p>ペットは大切な家族です。よく考えて利用しましょう</p>
+              <h1 class="title">ペットマッチング</h1>
+              <p class="subtitle">ペットは大切な家族です。よく考えて利用しましょう</p>
               <p><a class="btn btn-primary" href="#">本日登録</a></p>
             </div>
           </div>
@@ -43,8 +43,8 @@
 
           <div class="container">
             <div class="carousel-caption">
-              <h1>ペットマッチング</h1>
-              <p>引き取った後は必ずしっかりと育てましょう</p>
+              <h1 class="title">ペットマッチング</h1>
+              <p class="subtitle">引き取った後は必ずしっかりと育てましょう</p>
               <p><a class="btn btn-primary" href="#">もっと学ぼう</a></p>
             </div>
           </div>
@@ -55,8 +55,8 @@
 
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>ペット問題解決アプリ</h1>
-              <p>ペットが幸せになることをの望みましょう</p>
+              <h1 class="title">ペット問題解決アプリ</h1>
+              <p class="subtitle">ペットが幸せになることをの望みましょう</p>
               <p><a class="btn btn-primary" href="#">ギャラリーを閲覧</a></p>
             </div>
           </div>

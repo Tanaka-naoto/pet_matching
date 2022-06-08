@@ -183,6 +183,15 @@ body {
 }
 
 
+.title {
+    font-weight: bold;
+    color: rgb(254 82 185);
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
 
 
 
