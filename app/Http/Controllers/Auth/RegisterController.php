@@ -84,12 +84,6 @@ class RegisterController extends Controller
      */
     protected function create(Request $request)
     {
-        //画像保存　putFileAs
-        // dd($request->all());
-        // $file_name = $request->file('image')->getClientOriginalName();
-        // Storage::putFileAs('public/images', $request->file('image'), $file_name);
-        // $full_file_pass = '/storage/images/'.$file_name;
-
          //画像保存 move
          $file_name = $request->file('image')->getClientOriginalName();
          $name = date('Ymd_His').'_'.$file_name;

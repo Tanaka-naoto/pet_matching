@@ -11,11 +11,6 @@
             <input type="hidden" value="$want" name="want">
             <button class="btn btn-primary" >戻る</button>
         </form>
-
-        {{-- <a href="{{ route('pets.show', $want->pet_id, $want) }}">
-
-        </a> --}}
-
     </div>
     <p class="mt-2">ココにサイトの文章が入ります。</p>
 </main>

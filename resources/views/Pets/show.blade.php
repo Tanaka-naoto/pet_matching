@@ -8,10 +8,7 @@
 
 
 @section('content')
-<?php
-    // dd($want->reaction);
-    // dd($pet->room);
-?>
+
 @if(session('message'))
 
     <div class="alert alert-success">{{session('message')}}</div>
@@ -26,7 +23,6 @@
           <div class="card shadow-sm">
             <div style="width: 100%; height: 225px;  background: url({{asset('storage/pets/'.$pet->image_url)}})no-repeat center center; background-size:cover;"></div>
             <div class="card-body">
-                {{-- <img src="{{'storage/images/'.$pet->user->image_url}}" class="rounded-circle" alt="" style="width: 45px; height: 45px"> --}}
                <img src="{{asset('storage/images/'.$pet->user->image_url)}}" class="rounded-circle" alt="投稿者の画像" style="width: 45px; height: 45px">
                 <span>{{$pet->user->name}}</span>
                 <p class="card-text">{{ $pet->background }}</p>
@@ -144,11 +140,7 @@
             </div>
           </div>
         </div>
-
-
-
     </div>
-
 </div>
 
 

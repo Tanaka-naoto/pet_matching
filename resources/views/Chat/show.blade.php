@@ -39,21 +39,12 @@
 
     </div>
 
-    {{-- <div class="bg_2">
-        <div class="bg_rgba">
-            <div class="bg_text">background-image</div>
-        </div>
-    </div> --}}
-
 
     <form class="messageInputForm">
         <div class="msg_wrp">
             <textarea type="text" data-behavior="chat_message" class="col-8 messageInputForm_input" placeholder="メッセージを入力..."></textarea>
         </div>
-
-
-      </form>
-
+    </form>
 
   </div>
 

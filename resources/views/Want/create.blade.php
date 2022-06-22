@@ -26,12 +26,12 @@
 
         <div class="col-md-7 col-lg-8 mx-auto">
 
-            {{-- <form method="POST" action="{{ route('pets.requested') }}"> --}}
+
             <form method="POST" action="{{ route('want.store',$pet) }}">
                 @csrf
                 <!-- リアクションテーブルに渡す to_user_id -->
                 <input type="hidden" name="to_user_id" value="{{$pet->user_id}}">
-                {{-- <input type="hidden" name="pet_id" value="{{$pet->id}}"> --}}
+
             <div class="row g-3">
 
             <div class="col-12">

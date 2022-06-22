@@ -85,15 +85,7 @@
         @foreach($pets as $pet)
             <div class="col-lg-4">
 
-            {{-- <svg style="background: url({{$pet->image_url}}); " class="pet-image bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                <title>一般的なプレースホルダ画像</title>
-
-                <rect fill="#777" width="100%" height="100%" style="background: url({{$pet->image_url}}"/>
-            </svg> --}}
-
             <div class="pet-image bd-placeholder-img rounded-circle" width="140" height="140" style="background: url({{asset('storage/pets/'.$pet->image_url)}})no-repeat center center; background-size:cover; width: 140px; height: 140px; margin: 0 auto;" preserveAspectRatio="xMidYMid slice"></div>
-
-            {{-- <div style="width: 200px; height: 200px; background: url({{$pet->image_url}});"></div> --}}
 
             <h2>{{$pet->name}}</h2>
             <p class="text-left">{{ $pet->age }}歳</p>
@@ -107,9 +99,5 @@
             </div><!-- /.col-lg-4 -->
         @endforeach
       </div><!-- /.row -->
-
-
-
-  {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> --}}
 
 @endsection

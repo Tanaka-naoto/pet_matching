@@ -46,10 +46,6 @@ Route::name('pets.')//nameをuse
     Route::put('{pet}/update', 'PetController@update')->name('update');
     Route::delete('{pet}/destroy', 'PetController@destroy')->name('destroy');
 
-    //     //申請取り消し
-    // Route::delete('{want}/aiuo/destroy', 'PetController@want_destroy')->name('want_delete')
-    // ->where('pet', '[0-9]+');
-
 });
 
 Route::name('want.')//nameをuse

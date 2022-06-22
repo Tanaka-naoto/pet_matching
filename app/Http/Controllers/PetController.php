@@ -233,30 +233,12 @@ class PetController extends Controller
         return view('Pets.want',compact('pet'));
     }
 
-    //ほしい申請取消し
-    // public function want_destroy(Pet $pet) {
-
-    //     $user = Auth::user();
-    //     $unko = Want::where('user_id', $user->id)->where('pet_id', $pet->id)->get();
-
-    //     $unko->delete();
-
-    //     return redirect()
-    //         ->route('home')
-    //         ->with('message', '申請を取り消しました');
-    // }
-
     public function requested(WantRequest $want_request) {
 
         $want = new Want();
         $user = Auth::user();
 
-        // $pet_id = $want_request->input('pet_id');
-        // $requestUser = Want::where('user_id', $user->id)->where('pet_id', $pet_id)->get();
-
         //存在していない場合
-
-
             $want->can_keep_reson = $want_request->input('can_keep_reson');
             $want->keep_after = $want_request->input('keep_after');
             $want->user_id = $user->id;

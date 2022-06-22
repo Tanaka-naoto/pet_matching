@@ -6,9 +6,6 @@
 
 @section('content')
 
-<?php
-    // dd($want->reaction->where('pet_id', $pet));
-?>
 <div class="container marketing mt-3">
 
     <img src="{{asset('storage/images/'.$want->user->image_url)}}" class="rounded-circle" alt="" style="width: 55px; height: 55px">
@@ -53,18 +50,7 @@
             </span>
         @endif
 
-
-
-
     </div>
-
-
-    {{-- <p>{{$want->pet->user->id}}</p> --}}
-
-
-
 </div>
-
-
 
 @endsection

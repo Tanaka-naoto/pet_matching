@@ -72,11 +72,6 @@
 
                 </div>
             </div>
-            {{-- @foreach($matching_users as $matching_user)
-                <div>{{$matching_user->name}}</div>
-
-
-            @endforeach --}}
               <hr class="my-4">
               <div class="col-sm-6">
                 <label for="givenName" class="form-label">ペットの種類</label>

@@ -19,12 +19,6 @@ class WantController extends Controller
         ->where('pet_id', $want->pet->id)
         ->pluck('from_user_id');//to_user_idが自分になる
 
-
-        // $matching_users = Reaction::whereIn('to_user_id', $got_reaction_ids)
-        // ->where('from_user_id', $want->pet->user_id)
-        // ->where('pet_id', $want->pet->id)
-        // ->get();
-
         $pet = $request->input('petnoid');
 
 
@@ -99,28 +93,7 @@ class WantController extends Controller
         return view('Want.edit', compact('want', 'pet'));
     }
 
-    // public function update(Request $want_request, Want $requester) {
 
-    //     $this->authorize('update', $requester);
-    //     $user = Auth::user();
-
-
-    //     $requester->can_keep_reson = $want_request->input('can_keep_reson');
-    //     $requester->keep_after = $want_request->input('keep_after');
-    //     $requester->user_id = $user->id;
-    //     $requester->pet_id = $want_request->input('pet_id');
-
-    //     $requester->save();
-    //     $pet =  $want_request->input('pet_id');
-
-    //     // return redirect()
-    //     // ->route('want.show', compact('requester'))
-    //     // ->with('message', '申請リクエストを編集しました');
-
-    //     return view('Want.show', compact('requester', 'pet'))
-    //         ->with('message', '申請リクエストを編集しました');
-
-    // }
 
     public function update(Request $want_request, Want $want) {
 
@@ -134,10 +107,6 @@ class WantController extends Controller
 
         $want->update();
         $pet =  $want_request->input('pet_id');
-
-        // return redirect()
-        // ->route('want.show', compact('want'))
-        // ->with('message', '申請リクエストを編集しました');
 
         return view('Want.show', compact('want', 'pet'))
             ->with('message', '申請リクエストを編集しました');
